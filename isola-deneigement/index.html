@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isola Déneigement — Déneigement résidentiel & commercial</title>
+<meta name="description" content="Isola Déneigement : service de déneigement résidentiel et commercial avec horaires flexibles, ajustés à vos disponibilités. Réservez en ligne en quelques minutes.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%225%22 fill=%22%230E2238%22/><path d=%22M12 4v16M6 7l12 10M18 7L6 17%22 stroke=%22%23F2A33D%22 stroke-width=%221.8%22 stroke-linecap=%22round%22/></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="#F2A33D" stroke-width="1.6" stroke-linecap="round"><path d="M12 2v20M4.8 6l14.4 12M19.2 6L4.8 18"/></svg>
+      <span class="brand-name">ISOLA <span>DÉNEIGEMENT</span></span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="contact.html">Contact</a>
+      <div class="nav-cta-mobile"><a href="reservation.html" class="btn btn-primary">Réserver</a></div>
+    </nav>
+    <div class="nav-cta">
+      <a href="reservation.html" class="btn btn-primary">Réserver</a>
+    </div>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="snowfall" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Disponibilités flexibles · Intervention rapide</p>
+        <h1 class="h-xl">VOTRE NEIGE.<br><em>NOTRE PROBLÈME.</em></h1>
+        <p class="lede">Déneigement résidentiel et commercial, avec des horaires ajustés à vos disponibilités — pas l'inverse. Réservez en ligne en quelques minutes, on s'occupe du reste.</p>
+        <div class="hero-actions">
+          <a href="reservation.html" class="btn btn-primary">Réserver mon déneigement</a>
+          <a href="tarifs.html" class="btn btn-outline">Voir les tarifs</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>5 CM</b><span>Seuil type de déclenchement</span></div>
+          <div class="hero-stat"><b>Flexible</b><span>Horaires ajustés à vos dispos</span></div>
+          <div class="hero-stat"><b>Rési. & comm.</b><span>Particuliers et entreprises</span></div>
+        </div>
+      </div>
+
+      <!-- Jauge à neige — élément signature -->
+      <div class="gauge-wrap">
+        <svg class="gauge" viewBox="0 0 250 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jauge illustrant le seuil de déclenchement du déneigement à 5 centimètres de neige">
+          <defs>
+            <clipPath id="capsule"><rect x="70" y="20" width="80" height="320" rx="40" ry="40"/></clipPath>
+            <linearGradient id="fillGrad" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#3E6C92"/>
+              <stop offset="100%" stop-color="#9FC6E0"/>
+            </linearGradient>
+            <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="22"/>
+            </filter>
+          </defs>
+
+          <circle cx="110" cy="230" r="80" fill="#F2A33D" opacity="0.16" filter="url(#glow)"/>
+
+          <rect x="70" y="20" width="80" height="320" rx="40" ry="40" fill="rgba(143,184,214,0.07)" stroke="#3A5773" stroke-width="2"/>
+          <g clip-path="url(#capsule)">
+            <rect class="gauge-fill" x="70" y="100" width="80" height="240" fill="url(#fillGrad)"/>
+          </g>
+          <rect x="70" y="20" width="80" height="320" rx="40" ry="40" fill="none" stroke="#3A5773" stroke-width="2"/>
+
+          <!-- ticks mineurs -->
+          <g stroke="#3A5773" stroke-width="1.5">
+            <line x1="150" y1="290" x2="158" y2="290"/>
+            <line x1="150" y1="190" x2="158" y2="190"/>
+            <line x1="150" y1="90" x2="158" y2="90"/>
+          </g>
+          <!-- ticks majeurs + labels -->
+          <g stroke="#8FB8D6" stroke-width="2">
+            <line x1="150" y1="335" x2="164" y2="335"/>
+            <line x1="150" y1="140" x2="164" y2="140"/>
+            <line x1="150" y1="40" x2="164" y2="40"/>
+          </g>
+          <text x="170" y="339" class="gauge-mark-label">0 cm</text>
+          <text x="170" y="144" class="gauge-mark-label">10 cm</text>
+          <text x="170" y="44" class="gauge-mark-label">15 cm</text>
+
+          <!-- seuil de déclenchement -->
+          <line x1="64" y1="240" x2="158" y2="240" stroke="#F2A33D" stroke-width="2.5" stroke-dasharray="3 4"/>
+          <circle cx="64" cy="240" r="4" fill="#F2A33D"/>
+          <text x="170" y="231" class="gauge-mark-label">5 cm</text>
+          <text x="170" y="252" class="gauge-threshold-label">SEUIL</text>
+          <text x="170" y="266" class="gauge-threshold-label">ATTEINT</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== USP STRIP ===================== -->
+  <section class="usp-strip">
+    <div class="container usp-grid">
+      <div class="usp-item">
+        <svg class="usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <div><h4>Horaires flexibles</h4><p>On s'ajuste à vos disponibilités et aux conditions météo.</p></div>
+      </div>
+      <div class="usp-item">
+        <svg class="usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><h4>Service fiable</h4><p>Suivi des chutes de neige et intervention dès le seuil convenu.</p></div>
+      </div>
+      <div class="usp-item">
+        <svg class="usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="7" height="12"/><rect x="13" y="4" width="8" height="17"/></svg>
+        <div><h4>Résidentiel & commercial</h4><p>Entrées, trottoirs, stationnements, toitures.</p></div>
+      </div>
+      <div class="usp-item">
+        <svg class="usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3H4v7l10 10 7-7L11 3z"/><circle cx="8" cy="8" r="1.2" fill="currentColor" stroke="none"/></svg>
+        <div><h4>Tarifs clairs</h4><p>Devis gratuit, sans frais cachés.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMMENT ÇA FONCTIONNE ===================== -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Le processus</p>
+      <h2 class="h-lg">Comment ça fonctionne</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>Vous réservez en ligne</h3>
+          <p>Remplissez le formulaire de réservation et indiquez vos jours et horaires préférés.</p>
+        </div>
+        <div class="step">
+          <h3>On confirme votre créneau</h3>
+          <p>Selon la météo et vos disponibilités, on planifie le passage et on vous confirme l'heure.</p>
+        </div>
+        <div class="step">
+          <h3>On déneige</h3>
+          <p>Vous n'avez rien d'autre à faire — on s'occupe de l'entrée, du trottoir ou du stationnement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES PREVIEW ===================== -->
+  <section class="section section--frost2">
+    <div class="container">
+      <p class="eyebrow">Nos services</p>
+      <h2 class="h-lg">Un service pour chaque besoin d'hiver</h2>
+      <div class="card-grid">
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/><path d="M10 19v-5h4v5"/></svg>
+          <h3>Déneigement résidentiel</h3>
+          <p>Entrées, allées, trottoirs et perrons. Service ponctuel ou contrat saisonnier.</p>
+          <a class="card-link" href="services.html">En savoir plus →</a>
+        </div>
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="7" height="12"/><rect x="13" y="4" width="8" height="17"/></svg>
+          <h3>Déneigement commercial</h3>
+          <p>Stationnements, accès commerces et copropriétés, avec des horaires qui respectent votre achalandage.</p>
+          <a class="card-link" href="services.html">En savoir plus →</a>
+        </div>
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="1.4" fill="currentColor" stroke="none"/><circle cx="13" cy="9" r="1.4" fill="currentColor" stroke="none"/><circle cx="9" cy="16" r="1.4" fill="currentColor" stroke="none"/><circle cx="17" cy="14" r="1.4" fill="currentColor" stroke="none"/><circle cx="18" cy="6" r="1.4" fill="currentColor" stroke="none"/></svg>
+          <h3>Sablage & déglaçage</h3>
+          <p>Épandage de sel ou d'abrasif pour limiter la formation de glace sur vos accès.</p>
+          <a class="card-link" href="services.html">En savoir plus →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FLEXIBILITÉ ===================== -->
+  <section class="section">
+    <div class="container flex-section">
+      <div>
+        <p class="eyebrow">Disponibilités</p>
+        <h2 class="h-lg">Vos disponibilités, notre priorité</h2>
+        <p class="lede" style="margin-top:14px;">Chaque foyer et chaque commerce a un rythme différent. Plutôt que d'imposer un horaire fixe, on construit le service autour du vôtre.</p>
+        <ul class="flex-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg> Indiquez vos jours et plages horaires préférés dans le formulaire de réservation.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg> Choisissez entre un contrat saisonnier ou un service ponctuel, selon vos besoins.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg> L'intervention est ajustée à la météo, en respectant au mieux vos contraintes d'horaire.</li>
+        </ul>
+        <a href="reservation.html" class="btn btn-outline--dark" style="margin-top:30px;">Indiquer mes disponibilités</a>
+      </div>
+      <div class="avail-card">
+        <span class="avail-card-label">Exemple de disponibilités reçues</span>
+        <div class="avail-chips">
+          <span class="chip">Lun</span><span class="chip">Mar</span><span class="chip is-on">Mer</span>
+          <span class="chip">Jeu</span><span class="chip is-on">Ven</span><span class="chip is-on">Sam</span><span class="chip">Dim</span>
+        </div>
+        <div class="avail-chips">
+          <span class="chip">Tôt le matin</span><span class="chip is-on">Matinée</span><span class="chip">Après-midi</span><span class="chip">Soirée</span>
+        </div>
+        <div class="avail-foot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+          <p>On confirme toujours le créneau avant de passer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BANNER ===================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <h2>Prêt pour l'hiver ?</h2>
+          <p>Réservez votre déneigement en ligne ou demandez un devis gratuit — réponse rapide, sans engagement.</p>
+        </div>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="reservation.html" class="btn btn-primary">Réserver maintenant</a>
+          <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="#F2A33D" stroke-width="1.6" stroke-linecap="round"><path d="M12 2v20M4.8 6l14.4 12M19.2 6L4.8 18"/></svg>
+          <span class="brand-name">ISOLA <span>DÉNEIGEMENT</span></span>
+        </a>
+        <p>Déneigement résidentiel et commercial. Horaires flexibles, ajustés à vos disponibilités et aux conditions météo.</p>
+        <div class="qr-box">
+          <div data-qr></div>
+          <p>Scannez pour ouvrir le site sur votre mobile et réserver en quelques tapes.</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reservation.html">Réserver</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:isoladeneigement@gmail.com">isoladeneigement@gmail.com</a></li>
+          <li><span class="placeholder-text">[Votre numéro de téléphone]</span></li>
+          <li><span class="placeholder-text">[Zone desservie]</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Horaires</h5>
+        <ul>
+          <li>7j/7 en saison hivernale</li>
+          <li>Horaires ajustés selon la météo</li>
+          <li>Disponibilités flexibles sur demande</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year></span> Isola Déneigement. Tous droits réservés.</p>
+      <p>Déneigement résidentiel & commercial</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
